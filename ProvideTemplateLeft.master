@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/ProvideTemplate.master" CodeFile="ProvideTemplateLeft.master.cs" Inherits="ProvideTemplateLeft" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
+    <div class="themeIntroBox eleHid">
+        <div class="themeIntro clearBox">
+        </div>
+    </div>
+
+    <!--g-body-wrap:begin  class="g-body-wrap layoutC" layoutC layoutLC设置有无左边情况-->
+    <section class="g-body-wrap layoutLC layoutLC2">
+        <!--bdOutBox:begin-->
+        <div class="g-body">
+            <!--bdInBox:begin-->
+            <div class="g-body-inner">
+                <div class="g-body-inner2 clearBox">
+                    <!--leftBox:begin-->
+                    <aside class="leftBox sideBar">
+                        <nav class="leftNavBox clearBox">
+                            <ul class="leftNav">
+                                <%if (isLogin != " ")
+                                  {%>
+
+                                <li <%if (Url == "provide_info.aspx")
+                                      { %> class="current" <%} %>><a href="provide_info.aspx" class="uA" hidefocus="true"><strong>加盟商資料</strong><i></i></a></li>
+                                <li <%if (Url == "provide_email.aspx")
+                                      { %> class="current" <%} %>><a href="provide_email.aspx" class="uA" hidefocus="true"><strong>更改電子郵件信箱</strong><i></i></a></li>
+                                <li <%if (Url == "provide_password.aspx")
+                                      { %> class="current" <%} %>><a href="provide_password.aspx" class="uA" hidefocus="true"><strong>更新密碼</strong><i></i></a></li>
+                                <li <%if (Url == "provide_ad_stat.aspx")
+                                      { %> class="current" <%} %>><a href="provide_adlist.aspx" class="uA" hidefocus="true"><strong>廣告信息统计</strong><i></i></a></li>
+                                <li <%if (Url == "provide_productlist.aspx")
+                                      { %> class="current" <%} %>><a href="provide_productlist.aspx" class="uA" hidefocus="true"><strong>優惠券统计</strong><i></i></a></li>
+
+
+                                <li <%if (Url == "provide_download.aspx")
+                                      { %> class="current" <%} %>><a href="provide_member_info.aspx" class="uA" hidefocus="true"><strong>下载优惠劵的会员资料</strong><i></i></a></li>
+
+                                <li class="last"><a href="provide_logout.aspx" class="uA" hidefocus="true"><strong>退出登入</strong><i></i></a></li>
+                                <%}
+                                  else
+                                  { %>
+                                <li class="current last"><a href="provide_login.aspx" class="uA" hidefocus="true"><strong>商戶登入</strong><i></i></a></li>
+                                <%} %>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <!--leftBox:end-->
+                    <div style="padding-top: inherit;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+</asp:Content>

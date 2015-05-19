@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" MasterPageFile="template.master" AutoEventWireup="true" CodeFile="templateleft.master.cs" Inherits="Jesto_templateleft" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="themeIntroBox eleHid">
+    <div class="themeIntro clearBox">
+    </div>
+  </div>
+  
+  <!--g-body-wrap:begin  class="g-body-wrap layoutC" layoutC layoutLC设置有无左边情况-->
+  <section class="g-body-wrap layoutLC layoutLC2">
+    <!--bdOutBox:begin-->
+    <div class="g-body">
+    	<!--bdInBox:begin-->
+    	<div class="g-body-inner">      	
+        <div class="g-body-inner2 clearBox">
+          <!--leftBox:begin-->
+          <aside class="leftBox sideBar">
+            <nav class="leftNavBox clearBox">              
+              <ul class="leftNav">
+              <%if(isLogin != " ") {%>
+                  <li <%if (Url=="member_info.aspx"){ %>class="current"<%} %>><a href="member_info.aspx" class="uA" hidefocus="true"><strong>會員資料</strong><i></i></a></li>
+                  <li <%if (Url=="member_email.aspx"){ %>class="current"<%} %>><a href="member_email.aspx" class="uA" hidefocus="true"><strong>更改電子郵件信箱</strong><i></i></a></li>
+                  <li <%if (Url=="member_password.aspx"){ %>class="current"<%} %>><a href="member_password.aspx" class="uA" hidefocus="true"><strong>更新密碼</strong><i></i></a></li>
+                  <li <%if (Url=="member_coupon.aspx"){ %>class="current"<%} %>><a href="member_coupon.aspx" class="uA" hidefocus="true"><strong>优惠劵</strong><i></i></a></li>
+                  <li <%if (Url=="member_friend.aspx"){ %>class="current"<%} %>><a href="member_friend.aspx" class="uA" hidefocus="true"><strong>邀请朋友</strong><i></i></a></li>
+                  <li <%if (Url=="default.aspx"){ %>class="current"<%} %>><a href="default.aspx" class="uA" hidefocus="true"><strong>瀏覽優惠項目</strong><i></i></a></li>
+				  <li <%if (Url=="member_introhistory.aspx"){ %>class="current"<%} %>><a href="member_introhistory.aspx" class="uA" hidefocus="true"><strong>瀏覽推介歷史</strong><i></i></a></li>				  
+                  <li class="last"><a href="member_logout.aspx" class="uA" hidefocus="true"><strong>退出登入</strong><i></i></a></li>
+                
+                	<%}else{ %>
+                  <li <%if (Url=="member_login.aspx"){ %>class="current last"<%} %>><a href="member_login.aspx" class="uA" hidefocus="true"><strong>會員登入</strong><i></i></a></li>
+                  
+                  <li <%if (Url=="member_forget_password.aspx"){ %>class="current last"<%} %>><a href="member_forget_password.aspx" class="uA" hidefocus="true"><strong>忘記密碼了？</strong><i></i></a></li>
+                  
+                  <li <%if (Url=="member_active_email.aspx"){ %>class="current last"<%} %>><a href="member_active_email.aspx" class="uA" hidefocus="true"><strong>補發確認信</strong><i></i></a></li>
+                  
+                  <li <%if (Url=="member_join_info.aspx"){ %>class="current last"<%} %>><a href="" class="uA" hidefocus="true"><strong>加入會員</strong><i></i></a></li>
+                  
+					<%} %>
+              </ul>              
+            </nav>
+          </aside>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+</asp:Content>

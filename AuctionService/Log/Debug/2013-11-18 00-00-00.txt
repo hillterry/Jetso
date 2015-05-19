@@ -1,0 +1,156 @@
+﻿#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 7180
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, Administrator/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+14:44:23::577 1 N - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 9504
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#CurrentDirectory: C:\Windows\system32
+#CommandLine: -s
+#ApplicationType: WinForm
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, SYSTEM/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+14:44:27::995 6 Y - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+14:44:28::148 10 N A0 开始载入虚拟会员信息
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 5936
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, Administrator/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+14:44:39::557 1 N - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 1180
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, Administrator/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:10:50::266 1 N - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 9020
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#CurrentDirectory: C:\Windows\system32
+#CommandLine: -s
+#ApplicationType: WinForm
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, SYSTEM/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:10:53::163 6 Y - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+17:10:53::310 10 N A0 开始载入虚拟会员信息
+17:20:53::355 10 N A0 开始载入虚拟会员信息
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 10048
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, Administrator/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:31:00::409 1 N - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 1304
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#CurrentDirectory: C:\Windows\system32
+#CommandLine: -s
+#ApplicationType: WinForm
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, SYSTEM/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:31:02::465 6 Y - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+17:31:02::612 10 N A0 开始载入虚拟会员信息
+17:31:02::787 10 N A0 载入1个虚拟会员
+17:31:02::794 11 N A1 有5个竞投产品需要处理！
+17:32:02::787 10 N A0 开始载入虚拟会员信息
+17:32:02::788 10 N A0 载入1个虚拟会员
+17:33:02::789 10 N A0 开始载入虚拟会员信息
+17:33:02::792 10 N A0 载入1个虚拟会员
+17:34:02::792 10 N A0 开始载入虚拟会员信息
+17:34:02::796 10 N A0 载入1个虚拟会员
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 5260
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, Administrator/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:35:07::214 1 N - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 5324
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, Administrator/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:37:45::617 1 N - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 6268
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#CurrentDirectory: C:\Windows\system32
+#CommandLine: -s
+#ApplicationType: WinForm
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, SYSTEM/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:37:46::272 6 Y - DmFramework.v1.4 v1.4.1013.0908 Build 2000-01-02 00:05:36
+17:37:46::412 10 N A0 开始载入虚拟会员信息
+17:37:46::570 10 N A0 载入1个虚拟会员
+17:37:46::577 11 N A1 有5个竞投产品需要处理！
+17:38:46::570 10 N A0 开始载入虚拟会员信息
+17:38:46::571 10 N A0 载入1个虚拟会员
+17:39:46::572 10 N A0 开始载入虚拟会员信息
+17:39:46::575 10 N A0 载入1个虚拟会员
+17:40:46::575 10 N A0 开始载入虚拟会员信息
+17:40:46::578 10 N A0 载入1个虚拟会员
+17:41:46::578 10 N A0 开始载入虚拟会员信息
+17:41:46::579 10 N A0 载入1个虚拟会员
+17:42:46::580 10 N A0 开始载入虚拟会员信息
+17:42:46::582 10 N A0 载入1个虚拟会员
+17:43:46::582 10 N A0 开始载入虚拟会员信息
+17:43:46::583 10 N A0 载入1个虚拟会员
+17:44:46::584 10 N A0 开始载入虚拟会员信息
+17:44:46::585 10 N A0 载入1个虚拟会员

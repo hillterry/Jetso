@@ -1,0 +1,12 @@
+C:\Users\cx\Documents\Visual Studio 2012\Projects\Jestoversion2\bin\Jetso.Data.dll
+C:\Users\cx\Documents\Visual Studio 2012\Projects\Jestoversion2\bin\Jetso.Data.pdb
+C:\Users\cx\Documents\Visual Studio 2012\Projects\Jestoversion2\Jetso.Data\obj\Debug\Jetso.Data.dll
+C:\Users\cx\Documents\Visual Studio 2012\Projects\Jestoversion2\Jetso.Data\obj\Debug\Jetso.Data.pdb
+F:\WebSite_Asp_net\Jesto\Jestoversion2\bin\Jetso.Data.dll
+F:\WebSite_Asp_net\Jesto\Jestoversion2\bin\Jetso.Data.pdb
+F:\WebSite_Asp_net\Jesto\Jestoversion2\Jetso.Data\obj\Debug\Jetso.Data.dll
+F:\WebSite_Asp_net\Jesto\Jestoversion2\Jetso.Data\obj\Debug\Jetso.Data.pdb
+E:\Jetso\Jestoversion2\bin\Jetso.Data.dll
+E:\Jetso\Jestoversion2\bin\Jetso.Data.pdb
+E:\Jetso\Jestoversion2\Jetso.Data\obj\Debug\Jetso.Data.dll
+E:\Jetso\Jestoversion2\Jetso.Data\obj\Debug\Jetso.Data.pdb

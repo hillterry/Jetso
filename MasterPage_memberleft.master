@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="template2.master" CodeFile="MasterPage_memberleft.master.cs" Inherits="MasterPage_memberleft" %>
+
+<asp:Content ID="g" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .c {
+            padding-top: inherit;
+        }
+    </style>
+</asp:Content>
+
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+    <div class="float_left position_r administrative_width196">
+        <div class="member2">
+            <img src="images/image-1_03.jpg" class="float_left img_ma10" />
+            <p class="line-hei23 font12"><%=name %></p>
+            <p class="line-hei23 font12">普通會員</p>
+            <div class="dotted_line clear" style="margin: 0px 10px 7px 0px;"></div>
+            <p class="line-hei font12">我的 Bids 結餘 : <%=point %></p>
+            <div class="glym position_r align_center m_top10">
+                <img src="images/glym.png" class="glym_a" /><div class="fon20_h black m_top5">管理个人账户</div>
+            </div>
+        </div>
+        <div class="management_nav">
+            <ul>
+                <li>
+                    <%if (Url == "EarnBids.aspx")
+                      {%>
+                    <img src="images/con_net_2q.png" class="tusd" /><a href="EarnBids.aspx" style="background-color: #FFF; color: #ff1269;">賺取bids點</a><span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/con_net_2q.png" class="tusd" /><a href="EarnBids.aspx">賺取bids點</a>
+                    <%} %>
+                </li>
+                <li>
+                    <%if (Url == "MyBids.aspx")
+                      {%>
+                    <img src="images/cot_24.png" class="tusd" /><a href="MyBids.aspx" style="background-color: #FFF; color: #ff1269;">我的 BIDS</a><span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/cot_24.png" class="tusd" /><a href="MyBids.aspx">我的 BIDS</a>
+                    <%} %>
+                </li>
+                <li >
+                     <%if (Url == "MemberAcution.aspx")
+                      {%>
+                    <img src="images/con_net_24.png" class="tusd"/><a href="MemberAcution.aspx" style="background-color:#FFF; color:#ff1269;">拍賣记录</a><span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/con_net_24.png" class="tusd"/><a href="MemberAcution.aspx" >拍賣记录</a>
+                    <%} %>
+
+                </li>
+                                <li >
+                     <%if (Url == "MemberBuyBidsRecord.aspx")
+                      {%>
+                    <img src="images/cot_24.png" class="tusd"/><a href="MemberBuyBidsRecord.aspx" style="background-color:#FFF; color:#ff1269;">购买Bid记录</a><span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/cot_24.png" class="tusd"/><a href="MemberBuyBidsRecord.aspx" >购买Bid记录</a>
+                    <%} %>
+
+                </li>
+                <li>
+                    <%if (Url == "MemberInfornew.aspx")
+                      {%>
+                    <img src="images/Member_Information_03.png" class="tusd" /><a href="MemberInfornew.aspx?ID=<%=id %>" style="background-color: #FFF; color: #ff1269;">设置账户信息</a><span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/Member_Information_03.png" class="tusd" /><a href="MemberInfornew.aspx?ID=<%=id %>">设置账户信息</a>
+                    <%} %>
+                </li>
+                <li>
+                    <%if (Url == "memberChangeEmail.aspx")
+                      {%>
+                    <img src="images/tusd2_03.png" class="tusd" /><a href="memberChangeEmail.aspx" style="background-color: #FFF; color: #ff1269;">修改郵箱</a><span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/tusd2_03.png" class="tusd" /><a href="memberChangeEmail.aspx">修改郵箱</a>
+                    <%} %>
+                </li>
+                <li>
+                    <%if (Url == "memberChangePassword.aspx")
+                      {%>
+                    <img src="images/tusd1_03.png" class="tusd" /><a href="memberChangePassword.aspx" style="background-color: #FFF; color: #ff1269;">修改密码</a><span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/tusd1_03.png" class="tusd" /><a href="memberChangePassword.aspx">修改密码</a>
+                    <%} %>
+
+                </li>
+                <li style="display:none">
+                    <%if (Url == "memberAddress.aspx")
+                      {%>
+                    <img src="images/Shipping_Address_07.png" class="tusd"  /><a href="memberAddress.aspx?AddressID=<%=AddressID %>" style="background-color: #FFF; color: #ff1269;">管理收货地址</a><span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/Shipping_Address_07.png" class="tusd" /><a href="memberAddress.aspx?AddressID=<%=AddressID %>">管理收货地址</a>
+                    <%} %>
+
+                </li>
+                <li style="display:none">
+                    <%if (Url == "share.aspx")
+                      {%>
+                    <img src="images/share_03.png" class="tusd" /><a href="share.html" style="background-color: #FFF; color: #ff1269;" >分享統計</a> <span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/share_03.png" class="tusd" /><a href="share.html">分享統計</a>
+                    <%} %>
+
+                </li>
+                <li>
+                    <%if (Url == "memberfriend.aspx")
+                      {%>
+                    <img src="images/Invite_Friends_03.png" class="tusd"/><a href="memberfriend.aspx"  style="background-color: #FFF; color: #ff1269;" >邀请朋友</a> <span class="hei10"></span>
+                    <%}
+                      else
+                      { %>
+                    <img src="images/Invite_Friends_03.png" class="tusd" /><a href="memberfriend.aspx">邀请朋友</a>
+                    <%} %>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

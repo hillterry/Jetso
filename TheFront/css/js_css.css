@@ -1,0 +1,481 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*點擊詳細頁*/
+.demo{width:344px;}
+/* showbox */
+.showbox{
+	height:183px;
+	width:344px;
+	position:relative;
+	overflow:hidden;
+	float:left;margin:0 0px;
+	display:inline;
+}
+.showbox .subtitle{
+	text-align:center;
+	position:absolute;
+	left:-2px;
+	bottom:-35px;
+	height:30px;
+	line-height:30px;
+	width:355px;
+	background:#333;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	color:#fff;
+	font-size:12px;
+}
+
+
+/*返回上面*/	
+ #returnTop {
+	_display:none;
+	position:fixed;
+	_position:absolute;
+	z-index:999;
+	right:15px;
+	bottom:-200px;
+	_bottom:auto;
+	width:36px;
+	height:30px;
+	text-indent:-999px;
+	overflow:hidden;
+	background-image:url(../images/Top.png);
+	_background-image:url(../images/Top.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	transition:bottom 0.9s;
+	-webkit-transition:bottom 0.9s;
+	-moz-transition:bottom 0.9s;
+	-o-transition:bottom 0.9s;
+}
+#returnTop:hover {
+	background-position:0 -32px;
+}	
+
+
+
+
+/*文字效果*/
+/* black - default */
+.minitip-content {
+    font-size: 13px;
+    padding: 8px 10px;
+    color: #fff;
+
+    text-shadow: 0 0 2px #000;
+    background-color: #3C3C3C;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow: 0 0 3px #555;
+    -webkit-box-shadow: 0 0 3px #555;
+    -moz-box-shadow: 0 0 3px #555;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+/* red */
+.green .minitip-content{
+    background-color: #A8D18B;
+    border: 1px solid rgba(67, 144, 102, 0.25);
+    color: #3C3C3C;
+    text-shadow: 0 0 2px #FAFBF1;
+}
+
+/* blue */
+.blue .minitip-content{
+    background-color: #4FC6E0;
+    border: 1px solid rgba(79, 198, 224, 0.25);
+}
+
+/* blue */
+.red .minitip-content{
+    background-color: #F15A29;
+    border: 1px solid rgba(241, 90, 41, 0.25);
+}
+
+/* yellow */
+.yellow .minitip-content{
+    background-color: #FBF59D;
+    border: 1px solid rgba(251, 245, 157, 0.25);
+    color: #3C3C3C;
+    text-shadow: 0 0 2px #FAFBF1;
+}
+
+
+
+
+
+
+/*右边广告*/
+
+/**
+ @ demo */
+#demoq {
+position:relative;
+width:230px;
+height:344px;
+/*border:1px solid #B6D1E6;*/
+overflow:hidden;
+}
+#demoq .switchable-nav {
+position:absolute;
+bottom:5px;
+right:5px;
+z-index:99;
+}
+#demoq .switchable-nav li {
+float:left;
+width:16px;
+height:16px;
+line-height:16px;
+margin-left:3px;
+background-color:#FCF2CF;
+/*border:1px solid #F47500;*/
+color:#D94B01;
+text-align:center;
+cursor:pointer;
+}
+#demoq .switchable-nav li.active {
+width:18px;
+height:18px;
+line-height:18px;
+margin-top:-1px;
+color:#FFF;
+background-color:#ff1269;/*红色*/
+font-weight:bold;
+}
+#demoq .switchable-content li {
+height:344px;
+width:230px;
+overflow:hidden;
+}
+/* for countdown plugin */
+#demoq .switchable-nav li,
+#demoq .switchable-trigger-content {
+position:relative;
+}
+
+#demoq .active .switchable-trigger-mask {
+visibility:visible
+}
+
+
+/*产品*/
+#examples{
+	left:450px;
+	width:300px;
+	overflow:visible;
+	top: 626px;
+}
+#etalage{
+	display: none;
+	margin-bottom: 50px;
+}
+
+/* Large thumbnail: */
+#etalage .etalage_thumb{
+	background: white url(../images/loading.gif) center no-repeat;
+	border: 1px solid #ddd;
+	padding: 6px;
+
+}
+/* Large thumbnail - image (in case you want to add a border around the image within the frame) */
+#etalage .etalage_thumb_image{ }
+
+/* Small thumbnails: */
+#etalage .etalage_small_thumbs li{
+	background: white;
+	border: 1px solid #ddd;
+	margin: 10px;
+	padding: 3px;
+}
+
+
+/* Zoomed image area: */
+#etalage .etalage_zoom_area,
+.etalage_zoom_area{
+	background: white url(../images/loading.gif) center no-repeat;
+	border: 1px solid #ddd;
+	padding: 6px;
+
+}
+
+/* Magnifier area (thumbnail hovering rectangle): */
+#etalage .etalage_magnifier{
+	background: white;
+	border: 1px solid #bbb;
+}
+
+/* Icon that will apear at the left bottom of the large thumbnail (optional): */
+#etalage .etalage_icon{
+	background: url(../images/zoom.png) no-repeat;
+	width: 14px;
+	height: 14px;
+}
+
+/* Hint that will apear at the top right of the large thumbnail (optional): */
+#etalage .etalage_hint{
+	background: url(../images/hint.gif) no-repeat;
+	width: 130px;
+	height: 57px;
+}
+
+/* Description area (optional) */
+#etalage .etalage_description{
+	background: white;
+	font-style: italic;
+	margin: 10px;
+	padding: 6px 10px;
+}
+
+/*
+ * ------------------------------------ FUNCTIONALITY --------------------------------------
+ * The following CSS serves to make Etalage function properly. Don't edit or edit carefully.
+ * -----------------------------------------------------------------------------------------
+ */
+
+.etalage, .etalage_thumb, .etalage_thumb_image, .etalage_source_image, .etalage_zoom_preview, .etalage_icon, .etalage_hint{ display:none }
+.etalage, .etalage ul, .etalage li, .etalage img, .etalage_hint, .etalage_icon, .etalage_description{ margin:0; padding:0; border:0; list-style:none }
+.etalage, .etalage_magnifier div, .etalage_magnifier div img, .etalage_small_thumbs ul, ul .etalage_small_thumbs li, .etalage_zoom_area div, .etalage_zoom_img{ position:relative }
+.etalage img, .etalage li{ -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -o-user-select:none; user-select:none; -webkit-user-drag:none; -moz-user-drag:none; user-drag:none }
+.etalage, .etalage_small_thumbs li{ float:left }
+.etalage_right{ float:right }
+.etalage li{ position:absolute }
+.etalage img{ vertical-align:bottom; max-width:none }
+.etalage_magnifier{ cursor:default }
+.etalage_magnifier div, .etalage_small_thumbs{ overflow:hidden }
+.etalage_magnifier div img{ display:none }
+.etalage_icon, .etalage_hint{ cursor:default; width:0; height:0; overflow:hidden }
+.etalage_small_thumbs li.vertical{ float:none }
+.etalage_zoom_area{ z-index:996 }
+.etalage_zoom_area div{ overflow:hidden; z-index:997 }
+.etalage_zoom_preview{ position:absolute; z-index:998 }
+.etalage_zoom_img, .etalage_hint{ z-index:999 }
+.etalage{ direction:ltr }
+div.etalage_description{ position:absolute; bottom:0; left:0; z-index:999 }
+div.etalage_description.rtl{ direction:rtl; text-align:right }
+
+
+
+/*表单*/
+.tip-yellowsimple {
+	text-align:left;
+	border:1px solid #c7bf93;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:6px 8px;
+	min-width:50px;
+	max-width:300px;
+	color:#000;
+	background-color:#fff9c9;
+	/**
+	 * - If you set a background-image, border/padding/background-color will be ingnored.
+	 *   You can set any padding to .tip-inner instead if you need.
+	 * - If you want a tiled background-image and border/padding for the tip,
+	 *   set the background-image to .tip-inner instead.
+	 */
+}
+.tip-yellowsimple .tip-inner {
+	font:12px/16px arial,helvetica,sans-serif;
+}
+
+/* Configure an arrow image - the script will automatically position it on the correct side of the tip */
+.tip-yellowsimple .tip-arrow-top {
+	margin-top:-6px;
+	margin-left:-5px; /* approx. half the width to center it */
+	top:0;
+	left:50%;
+	width:9px;
+	height:6px;
+	background:url(tip-yellowsimple_arrows.gif) no-repeat;
+}
+.tip-yellowsimple .tip-arrow-right {
+	margin-top:-4px; /* approx. half the height to center it */
+	margin-left:0;
+	top:50%;
+	left:100%;
+	width:6px;
+	height:9px;
+	background:url(tip-yellowsimple_arrows.gif) no-repeat -9px 0;
+}
+.tip-yellowsimple .tip-arrow-bottom {
+	margin-top:0;
+	margin-left:-5px; /* approx. half the width to center it */
+	top:100%;
+	left:50%;
+	width:9px;
+	height:6px;
+	background:url(tip-yellowsimple_arrows.gif) no-repeat -18px 0;
+}
+.tip-yellowsimple .tip-arrow-left {
+	margin-top:-4px; /* approx. half the height to center it */
+	margin-left:-6px;
+	top:50%;
+	left:0;
+	width:6px;
+	height:9px;
+	background:url(tip-yellowsimple_arrows.gif) no-repeat -27px 0;
+}
+
+/*<ul class="Form demo">表单的*/
+
+/* Form input */
+.Form li{list-style-type:none;}
+.Form input[type=text],.Form input[type=password],.Form textarea{
+	display:inline-block;padding:5px 12px;font-size:12px;color:#221919;background:#fff;border:1px solid #a4a2a2;
+	
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	
+	box-shadow:inset 0 1px rgba(34,25,25,.15),0 1px rgba(255,255,255,.8);
+	-moz-box-shadow:inset 0 1px rgba(34,25,25,.15),0 1px rgba(255,255,255,.8);
+	-webkit-box-shadow:inset 0 1px rgba(34,25,25,.15),0 1px rgba(255,255,255,.8);
+	
+	-webkit-transition:all .08s ease-in-out;
+	-moz-transition:all .08s ease-in-out;
+}
+
+.Form label{display:inline-block;}
+.Form input[type=text]:focus,.Form input[type=password]:focus,.Form textarea:focus{
+	border-color:#006499;
+	box-shadow:0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+	-moz-box-shadow:0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+	-webkit-box-shadow:0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+}
+.FancyForm li,.FancyForm li .input{position:relative}
+.FancyForm input[type=text],.FancyForm input[type=password],.FancyForm textarea{
+	position:relative;z-index:3;display:block;width:100%;background:transparent;border:1px solid #a4a2a2;
+	
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	
+	box-shadow:inset 0 1px rgba(34,25,25,.15),0 1px rgba(255,255,255,.8);
+	-moz-box-shadow:inset 0 1px rgba(34,25,25,.15),0 1px rgba(255,255,255,.8);
+	-webkit-box-shadow:inset 0 1px rgba(34,25,25,.15),0 1px rgba(255,255,255,.8);
+	
+	-webkit-transition:all .08s ease-in-out;
+	-moz-transition:all .08s ease-in-out;
+}
+.FancyForm textarea{min-height:3.95em;}
+.FancyForm label{
+	position:absolute;z-index:2;top:7px;left:13px;display:block;color:#BCBCBC;cursor:text;
+	
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	
+	-moz-transition:all .16s ease-in-out;
+	-webkit-transition:all .16s ease-in-out;
+}
+.FancyForm .fff{
+	position:absolute;z-index:1;top:0;right:0;left:3px;bottom:0;background-color:#fff;
+	
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+}
+.FancyForm input[type=text]:focus+label,.FancyForm input[type=password]:focus+label,.FancyForm textarea:focus+label{opacity:.5;filter:alpha(opacity="50");}
+.FancyForm .val label{left:-9999px;opacity:0!important;filter:alpha(opacity="0")!important;}
+/* Button base */
+
+
+
+
+
+
+/*下面JS是点击弹出JQ弹出层特效*/
+label{cursor:pointer;}
+.mainlist{padding:10px;}
+.mainlist li{height:28px;line-height:28px;font-size:12px;}
+.btnbox{text-align:center;height:30px;padding:10px 0px;background:#ECF9FF;}
+
+#windownbg{display:none;position:absolute;width:100%;height:100%;background:#000;top:0;left:0;}
+#windown-box{position:fixed;_position:absolute;border:5px solid #E9F3FD;background:#FFF;text-align:left;}
+#windown-title{position:relative;height:30px;border:1px solid #A6C9E1;overflow:hidden;background:url(images/tipbg.png) 0 0 repeat-x;}
+#windown-title h2{position:relative;left:10px;top:5px;font-size:14px;color:#666;}
+#windown-close{position:absolute;right:10px;top:8px;width:10px;height:16px;text-indent:-10em;overflow:hidden;background:url(images/tipbg.png) 100% -49px no-repeat;cursor:pointer;}
+#windown-content-border{position:relative;top:-1px;border:1px solid #A6C9E1;padding:5px 0 5px 5px;}
+#windown-content img,#windown-content iframe{display:block;}
+#windown-content .loading{position:absolute;left:50%;top:50%;margin-left:-8px;margin-top:-8px;}
+
+
+
+
+
+/*歡迎您註冊 注册成功*/
+.pop{position:absolute;left:45%;top:40%;width:170px;height:85px;border:1px solid #ccc}
+.pop_head{position:relative;}
+.pop_head a.close{width:47px;height:46px;background:url(../images/close.png);;position:absolute;right:-23px;line-height:20px;color:#000;text-decoration:none;top:-23px;}
+.pop_body{ text-align:center;padding:10px;background:#f5f5f5;width:150px;height:65px;overflow:hidden; font-size:14px;}
+
+
+
+/*下拉菜单*/
+
+/* main navigation */
+
+.navigation li  {
+	float: left;
+	
+}
+.navigation a  {
+	padding: 0px 15px;
+	float: left;
+	color: #FFF;
+	text-decoration: none;
+	
+}
+.navigation li ul  {
+	display: none;
+	
+}
+.navigation li:hover ul,
+.navigation li.hover ul  {
+	display: block;
+}
+
+.navigation li:hover a,
+.navigation li.hover a  {
+	color: #369;
+}
+.navigation ul  {
+	margin:0px 0px 0px 19px;
+	padding:0px 0px 0px 0px;
+	z-index: 99;
+	list-style:none;
+	width:100px;
+	
+}
+.navigation ul li  {
+	float: left;
+	display:block;
+	padding:0px 6px;
+	background:#ffb514;
+	width:90px;
+}
+.navigation ul li:hover,
+.navigation ul li.hover  {
+	background:#f2a600;
+	
+}
+.navigation ul li a  {
+	padding: 4px 0px;
+	color: #FFF !important;
+	width:90px;
+}
+
+.navigation li ul li:hover ul,
+.navigation li ul li.hover ul  {
+	display: block !important;
+}

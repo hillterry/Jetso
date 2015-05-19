@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ProvideTemplate.master.cs" Inherits="ProvideTemplate" %>
+
+<!DOCTYPE html>
+
+<html class="mainWin interiorPage" xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Net Rewards 香港 - 香港會員積分網</title>
+  <link rel="stylesheet" href="<%= ResolveUrl("~/Billing/css/base.css")%>" type="text/css" />
+  <link rel="stylesheet" href="<%= ResolveUrl("~/Billing/css/framecss.css")%>" type="text/css" />
+  <link rel="stylesheet" href="<%= ResolveUrl("~/Billing/css/print.css")%>" type="text/css" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Jesto/css/pagestyle.css")%>" type="text/css" />
+
+  <!--[if lte IE 6]><link href="css/ie6.css" rel="stylesheet" charset="utf-8"><![endif]-->
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/browser.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/prototype-1.6.1/prototype.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/prototype_ext.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/scriptaculous-1.8.3/scriptaculous.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/_webpage.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/msclass.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/js.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/common.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/showtime.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/calendar.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/date.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/SmeWindow.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/swfobject.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/FormInvalid.js")%>" type="text/javascript" charset="utf-8"></script>
+  <script src="<%= ResolveUrl("~/Billing/jsSrc/auction.js")%>" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+    var winGalleryFiles;
+    function openWinSimple(title, w, h, url, className) {
+        winGalleryFiles = new SmeWindow({ title: title, width: w, height: h, isMask: true, isScroll: false, className: className, winmode: 'simple' });
+        winGalleryFiles.setAjaxContent(url + "?r=" + Math.random(), {
+            method: 'get',
+            onComplete: function () {
+            }
+        });
+        winGalleryFiles.show();
+    }
+    function openWin(title, w, h, url, className) {
+        winGalleryFiles = new SmeWindow({ title: title, width: w, height: h, isMask: true, isScroll: false, className: className });
+        winGalleryFiles.setAjaxContent(url + "?r=" + Math.random(), {
+            method: 'get',
+            onComplete: function () {
+            }
+        });
+        winGalleryFiles.show();
+    }
+    function openWinFrame(title, w, h, url, className) {
+        winGalleryFiles = new SmeWindow({ title: title, url: url + "?r=" + Math.random(), width: w, height: h, isMask: true, isScroll: false, className: className });
+        winGalleryFiles.show();
+    }
+    function MemberLogin() {
+        var frm = document.frmMemberLogin;
+        if (trim(frm.Account.value) == "") {
+            alert("請輸入email或者帳號");
+            frm.Account.focus();
+        } else if (trim(frm.Password.value) == "") {
+            alert("請輸入密碼");
+            frm.Password.focus();
+        } else {
+            frm.opt.value = "login";
+            frm.action = "";
+            frm.submit();
+        }
+    }
+</script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="zh">
+
+    <div class="wrapper">
+  <header class="g-header" id="hd">
+    <section class="g-header-m">
+      <h1 class="logo"><a href="default.asp" class="uA">CompanyName</a></h1>
+      <nav class="g-nav">
+        <ul class="g-nav-main g-n-m" id="mainnav">
+          <%if (Url=="default.aspx")
+            { %>
+          <li class="first current">
+            <%}
+            else
+            { %>
+            <li class="first">
+              <%} %>
+              <a href="default.aspx" class="uA uAFirst" hidefocus="true"><strong>首頁</strong></a>
+            </li>
+            <%if (Url=="provide_info.aspx")
+              { %>
+            <li class="dropDownMenu current">
+              <%}
+              else
+              { %>
+              <li class="dropDownMenu">
+                <%} %>
+                <a href="provide_info.aspx" class="uA" hidefocus="true"><strong>商戶登入</strong></a>
+                <div class="popMenuBox">
+                  <div class="popMenuM">
+                    <a href="provide_join.aspx" class="subA current"><span>商戶註冊</span></a>
+                    <a href="provide_info.aspx" class="subA"><span>帳戶管理</span></a>
+                  </div>
+                </div>
+              </li>
+              <%if (Url == "member_login.aspx")
+                { %>
+              <li class="dropDownMenu current">
+                <%}
+                else
+                { %>
+                <li class="dropDownMenu">
+                  <%} %>
+                  <a href="<%= ResolveUrl("~/FrontView/member_login.aspx")%>" class="uA" hidefocus="true"><strong>加入會員</strong></a>
+                  <div class="popMenuBox">
+                    <div class="popMenuM">
+                      <a href="member_join.aspx" class="subA current"><span>會員註冊</span></a>
+                      <a href="member_forget_password.aspx" class="subA"><span>忘記密碼</span></a>
+                      <a href="member_info.aspx" class="subA"><span>帳戶管理</span></a>
+                      <a href="member_active_email.aspx" class="subA last"><span>補發確認信</span></a>
+                    </div>
+                  </div>
+                </li>
+                <%if (Url == "Auction.aspx")
+                  { %>
+                <li class="dropDownMenu current">
+                  <%}
+                  else
+                  { %>
+                  <li class="dropDownMenu">
+                    <%} %>
+                    <a href="<%= ResolveUrl("~/Billing/Auction.aspx")%>" class="uA" hidefocus="true"><strong>竞投</strong></a>
+                  </li>
+        </ul>
+      </nav>
+      <dl class="g-secondary-nav g-s-n btnLib mBtn">
+
+        <%if (isLogin == null)
+          {%>
+        <form id="frmMemberLogin" name="frmMemberLogin" action="checkMemberLogin.aspx" method="post">
+          <input type="hidden" name="opt" value="" />
+
+          <dt><span>email／帳號</span><input type="text" name="Account" style="width: 120px;" />
+          </dt>
+          <dt><span>密碼</span><input type="password" name="Password" style="width: 80px;" />
+          </dt>
+          <dt class="Go"><span>&nbsp;</span>
+            <a href="javascript:MemberLogin()">登录</a>
+          </dt>
+        </form>
+        <%}
+          else
+          { %>
+        <dt class="userInfo">Hi! 欢迎 <strong><% = nickName%></strong> 登录！ | </dt>
+        <!--登录前和登录后判断-->
+        <dt><a href="member_logout.aspx" class="uA" hidefocus="true">登出</a></dt>
+
+        
+        <%} %>
+      </dl>
+      <div class="hdSearchBarWrap">
+        <div class="hdSearchBar" onmouseover="$(this).addClassName('hdSearchBarHover');" onmouseout="$(this).removeClassName('hdSearchBarHover')">
+          <span class="uInput">
+            <label>
+              <input type="text" /></label></span><a href="search_list.html" class="searchGo" hidefocus="true"><em>搜索</em></a>
+        </div>
+      </div>
+    </section>
+  </header>
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+
+
+
+<footer class="g-footer">
+   <div class="g-footer-inner clearBox">
+    <p class="ftLinks"><a href="#">首页</a> | <a href="#">关于我们</a> | <a href="../html/contact-us.html">联络资料</a> | <a href="../html/declare.html">法律声明</a> | <a href="../html/copyright.html">隐私保护</a></p>
+    <p class="powerBy">© 2011 <a href="#">NetRewards</a> 版权所有。</p>   
+   </div>
+  </footer>
+</div>
+</body>
+</html>

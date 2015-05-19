@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06188AB7-9E2C-4DF4-8790-6DA1098DD1C1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jetso.AuctionAgent</RootNamespace>
+    <AssemblyName>AuctionAgentSvc</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_4_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\AuctionService\</OutputPath>
+    <DefineConstants>TRACE;NET_4_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>StrongKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DmFramework.Bootstrap.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DmProjects\bin\DmFramework.Bootstrap.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.Data.CommonEntity.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\DmFramework.Data.CommonEntity.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.Data.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DmProjects\bin\DmFramework.Data.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.Template.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DmProjects\bin\DmFramework.Template.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DmProjects\bin\DmFramework.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.WebControls.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DmProjects\bin\DmFramework.WebControls.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <HintPath>DLL\System.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Jetso.Data\Address.Biz.cs">
+      <Link>Entity\Address.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\Address.cs">
+      <Link>Entity\Address.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\adview.Biz.cs">
+      <Link>Entity\adview.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\adview.cs">
+      <Link>Entity\adview.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\Auction.Biz.cs">
+      <Link>Entity\Auction.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\Auction.cs">
+      <Link>Entity\Auction.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\AuctionHistory.Biz.cs">
+      <Link>Entity\AuctionHistory.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\AuctionHistory.cs">
+      <Link>Entity\AuctionHistory.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\coupon.Biz.cs">
+      <Link>Entity\coupon.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\coupon.cs">
+      <Link>Entity\coupon.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\couponshare.Biz.cs">
+      <Link>Entity\couponshare.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\couponshare.cs">
+      <Link>Entity\couponshare.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\education.Biz.cs">
+      <Link>Entity\education.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\education.cs">
+      <Link>Entity\education.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\friend.Biz.cs">
+      <Link>Entity\friend.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\friend.cs">
+      <Link>Entity\friend.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\gender.Biz.cs">
+      <Link>Entity\gender.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\gender.cs">
+      <Link>Entity\gender.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\income.Biz.cs">
+      <Link>Entity\income.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\income.cs">
+      <Link>Entity\income.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\ip2location_db1.Biz.cs">
+      <Link>Entity\ip2location_db1.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\ip2location_db1.cs">
+      <Link>Entity\ip2location_db1.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\MailServer.Biz.cs">
+      <Link>Entity\MailServer.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\MailServer.cs">
+      <Link>Entity\MailServer.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\member.Biz.cs">
+      <Link>Entity\member.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\member.cs">
+      <Link>Entity\member.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\pointrule.Biz.cs">
+      <Link>Entity\pointrule.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\pointrule.cs">
+      <Link>Entity\pointrule.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\producetype.Biz.cs">
+      <Link>Entity\producetype.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\producetype.cs">
+      <Link>Entity\producetype.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\product.Biz.cs">
+      <Link>Entity\product.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\product.cs">
+      <Link>Entity\product.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\provide.Biz.cs">
+      <Link>Entity\provide.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\provide.cs">
+      <Link>Entity\provide.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\system.Biz.cs">
+      <Link>Entity\system.Biz.cs</Link>
+    </Compile>
+    <Compile Include="..\Jetso.Data\system.cs">
+      <Link>Entity\system.cs</Link>
+    </Compile>
+    <Compile Include="AuctionAgent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTimeHelper.cs" />
+    <Compile Include="Entity\Enum.cs" />
+    <Compile Include="Properties\AssemblyBuild.cs" />
+    <Compile Include="MainX.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StrongKey.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

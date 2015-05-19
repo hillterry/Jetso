@@ -1,0 +1,346 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="template.master.cs" Inherits="Jesto_template" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>auction</title>
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Billing/css/style.css")%>" type="text/css" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Billing/css/js_css.css")%>" type="text/css" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Billing/css/formcss.css")%>" type="text/css" />
+
+    <!--[if lte IE 6]><link href="css/ie6.css" rel="stylesheet" charset="utf-8"><![endif]-->
+    <script src="<%= ResolveUrl("~/Billing/js/jquery.min.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/js/jquery.form.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/js/jquery.hoverex.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/js/jquery.reveal.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/Billing/jsSrc/date.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/Billing/jsSrc/auction.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/Billing/js/jquery.etalage.min.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/Billing/js/jquery.poshytip.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/Billing/js/jq.validate.js")%>" type="text/javascript" charset="utf-8"></script>
+    <script src="<%= ResolveUrl("~/Billing/js/tipswindown.js")%>" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        var myAjax = new Array(<%=ItemPageSize+1%>);
+        var intervaltime = 5;
+        var winGalleryFiles;
+
+        $(document).ready(function () {
+            $("#isread1").click(popTips);
+            $("#isread-text1").click(popTips);
+        });
+
+        $(document).ready(function () {
+            var options = {
+                success: function (data) {
+                    var msg = data;
+                    if (msg == "account_error") {
+                        $("#errortext").css("display", "block");
+                        $("#errortext").text("您的帳號或者密碼不正確!");
+                    }
+                    if (msg == "not_active") {
+                        $("#errortext").css("display", "block");
+                        $("#errortext").text("您的帳號尚未激活!");
+                    }
+                    if (msg == "not_used") {
+                        $("#errortext").css("display", "block");
+                        $("#errortext").text("您的帳號被停用!");
+                    }
+                    if (msg == "success") {
+                        window.location.reload();
+                    }
+                }
+            };
+            // ajaxForm
+            $("#frmLogin").ajaxForm(options);
+        });
+        function showTipsWindown(title, id, width, height) {
+            tipsWindown(title, "id:" + id, width, height, "true", "", "true", id);
+        }
+
+        function confirmTerm(s) {
+            parent.closeWindown();
+            if (s == 1) {
+                parent.document.getElementById("isread1").checked = true;
+            }
+        }
+
+
+        //彈出層調用
+        function popTips() {
+            // alert("adsfa");
+            showTipsWindown("Auction用戶註冊協議", 'simTestContent', 600, 230);
+            //alert("");
+            $("#isread1").attr("checked", false);
+            return false;
+        }
+
+        function trim(str) {
+            regExp1 = /^ */;
+            regExp2 = / *$/;
+            return str.replace(regExp1, '').replace(regExp2, '');
+        }
+
+
+        function login() {
+            var frm = document.getElementById("frmLogin");
+
+            if (trim(frm.Account.value) == "") {
+                alert("請輸入會員帳號!");
+                frm.Account.focus();
+                return false;
+            }
+
+            if (trim(frm.Password.value) == "") {
+                alert("請輸入會員密碼!");
+                frm.Password.focus();
+                return false;
+            }
+
+            return true;
+        }
+        function change() {
+            window.location.href = "<%= ResolveUrl("~/Billing/memberRegister.aspx")%>";
+        }
+        function change2() {
+            window.location.href = "<%= ResolveUrl("~/Billing/ForgetPassword.aspx")%>";
+                }
+
+        //function getContents(id, div, url, index) {
+        //  var request_url;       // 请求url
+        //  var request_pars = ''; //请求参数
+        //  request_url = url;
+        //  //alert("主页"+id);
+        // // alert(div);
+        //  request_url = addParams(request_url, { ID: id }, true);
+        //  request_url = addParams(request_url, { Index: index }, true);
+        //  // alert(request_url);
+
+        //  myAjax[index] = new Ajax.PeriodicalUpdater(div, request_url, {
+        //    method: 'get', // http 请求方法,get or post
+        //    evalScripts: true,
+        //    frequency: intervaltime,
+        //    parameters: null,
+        //    //insertion: Insertion.Top,
+        //    //decay: 0.2
+        //  });
+        //  // alert('aaaaaaaaaaaaaaaaa');
+        //}
+
+        //function stoprefresh(index) {
+        //  myAjax[index].stop();
+        //  alert("1111");
+        //}
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%if (isLogin == null)
+      {%>
+    <form id="frmLogin" name="frmLogin" method="post" onsubmit="return login()" action="<%= ResolveUrl("~/FrontView/checkMemberLogin.aspx")%>">
+        <div class="menu2">
+            <div class="ttboady">
+                <div class="float_right">
+                    <div class="form1 form2 float_left">
+                        <img src="images/form1_10.jpg" class="reen" /><span>
+                            <input id="Account" name="Account" type="text" class="width185" onfocus="hide1()" size="0" />
+                        </span>
+                    </div>
+                    <div class="form1 form2 float_left left20">
+                        <img src="images/form1_14.jpg" class="reen" /><span>
+                            <input name="Password" type="Password" onfocus="hide1()" class="width185" size="0" />
+                        </span>
+                        <div class="mismatching white" id="errortext" style="display: none;">
+                            <%--<label id="errortext"></label>--%>
+                        </div>
+                    </div>
+                    <div class="button1 float_left left10 width60">
+                        <button id="btnAjaxSubmit" class="white finger font14 bg_bb width60">登入</button>
+                    </div>
+                    <%--  <asp:LinkButton ID="LinkButton1" CssClass="white" runat="server" OnClick="LinkButton1_Click"><span>登入</span></asp:LinkButton>--%>
+                    <div class="button1 float_left left10 width60">
+                        <input type="button" value="註冊" onclick="change()" class="white finger font14 bg_bb width60" />
+                    </div>
+                    <div class="button1 float_left left10 width80">
+                        <input type="button" value="忘記密碼" onclick="change2()" class="white finger font14 bg_bb2 width80" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="myModal" class="reveal-modal">
+        <form id="frmLogin1" class="form0" name="frmLogin1" method="post" onsubmit="return login()" action="<%= ResolveUrl("~/FrontView/checkMemberLogin.aspx")%>">
+            <input type="hidden" name="opt" value="login" />
+            <label id="errortext1"></label>
+            <input type="text" id="Account1" name="Account" class="name" placeholder="登入名稱" />
+            <input type="password" name="Password" class="name" placeholder="密碼" />
+            <button id="btnAjaxSubmit1" class="name">提交</button>
+            <div>還沒有帳號？ <a href="getRedirtUrl.aspx">立即註冊</a></div>
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <%}
+      else
+      { %>
+    <div class="menu2">
+        <div class="ttboady">
+            <div class="float_right">
+                <ul class="dlt">
+                    <li><a href="MemberInfornew.aspx?ID=<%=id %>" class="white">&raquo; 进入我的帳號</a></li>
+                    <li><a class="matop5">
+                        <img src="images/sss_03.jpg" height="12" /></a></li>
+                    <li class="white">你好, <%=nickName %></li>
+                    <li><a class="matop5">
+                        <img src="images/sss_03.jpg" height="12" /></a></li>
+                    <li class="white">我的Bids结余 : <%=point %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <%} %>
+    <div class="banner">
+        <img src="images/logo_14.png" style="margin: 62px 0px 30px 0px" />
+    </div>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li><a href="Auction.aspx"><span class="m1">即時拍賣</span></a></li>
+                <li><a href="NewbieGuide.aspx"><span class="m2">新手指南</span></a></li>
+                <li><a href="BuyBid.aspx"><span class="m3">買BIDS</span></a></li>
+                <li><a href="CommonProblems.aspx"><span class="m4">常見問題</span></a></li>
+                <li><a href="#"><span class="m5">新聞中心</span></a></li>
+                <li><a href="#"><span class="m6">即將推出的拍賣</span></a></li>
+                <li><a href="#"><span class="m7">已結束拍賣</span></a></li>
+                <li><a href="#"><span class="m8">贏家</span></a></li>
+            </ul>
+        </div>
+        <div class="centre c">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="clear"></div>
+            <div class="ending">
+                <a href="#">產品推薦</a>   ㄧ  <a href="#">意見</a>   ㄧ <a href="#">安心競投</a>    ㄧ<a href="#">  支援中心</a>   ㄧ<a href="#">   條款及規則</a>    ㄧ<a href="#">    關於我們</a>
+            </div>
+        </div>
+        <div class="bonnom">
+            <img src="images/bonnom1_06.png" />
+        </div>
+        <div class="clear"></div>
+        <div id="dibu">
+            <!--回到顶部-->
+            <a id="returnTop" href="javascript:;">回到顶部</a>
+            <!--回到顶部-->
+        </div>
+    </div>
+
+    <script type="text/javascript"><!--點擊詳細頁-->
+    $(".showbox").each(function () {
+        var self = $(this), delay;
+        self.mouseover(function () {
+            delay = setTimeout(function () { delay = null; self.find(".subtitle").stop().animate({ "bottom": 0 }, 300); }, 300);
+        }).mouseout(function () {
+            if (delay) {
+                clearTimeout(delay);
+            } else {
+                setTimeout(function () { self.find(".subtitle").stop().animate({ "bottom": -40 }, 300); }, 300);
+            }
+        });
+    });
+
+    $(function () {
+        // miniTip example 1 - default
+        $('#example-1 .tip').miniTip();
+
+        // miniTip 2 - custom attribute
+        $('#example-2 .tip').miniTip({
+            'contentAttribute': 'data-tip',
+            'className': 'green',
+            'offset': 20,
+            'showAnimateProperties': { 'top': '-=10' },
+            'hideAnimateProperties': { 'top': '+=10' },
+            'position': 'bottom',
+            'onLoad': function (element, tooltip) {
+                $(element).animate({ 'opacity': 0.35 }, '350');
+
+            },
+            'onHide': function (element, tooltip) {
+                $(element).animate({ 'opacity': 1 }, '250');
+
+            }
+        });
+
+        // miniTip example 3 - custom selector
+        $('#example-3 .tip').miniTip({
+            'event': 'click',
+            'delay': '3000',
+            'contentType': 'selector',
+            'contentSelector': '.tip-content',
+            'position': 'left',
+            'className': 'red'
+        });
+    });
+    $(document).ready(function () {
+        $('#demoq').slide({
+            effect: 'scroll',
+            //direction: 'y',
+            delay: 8000,
+            speed: 500,
+            //hasTriggers: false,
+            //controlThumbs: true,
+            //pauseOnScroll: true,
+            //caption: true,
+            evtype: 'click'
+        });
+
+
+    });
+    var EX = {
+        addEvent: function (k, v) {
+            var me = this;
+            if (me.addEventListener)
+                me.addEventListener(k, v, false);
+            else if (me.attachEvent)
+                me.attachEvent("on" + k, v);
+            else
+                me["on" + k] = v;
+        },
+        removeEvent: function (k, v) {
+            var me = this;
+            if (me.removeEventListener)
+                me.removeEventListener(k, v, false);
+            else if (me.detachEvent)
+                me.detachEvent("on" + k, v);
+            else
+                me["on" + k] = null;
+        },
+        stop: function (evt) {
+            evt = evt || window.event;
+            evt.stopPropagation ? evt.stopPropagation() : evt.cancelBubble = true;
+        }
+    };
+
+    document.getElementById('pop').onclick = EX.stop;
+    var url = '#';
+    function show() {
+        var o = document.getElementById('pop');
+        o.style.display = "";
+        setTimeout(function () {
+            EX.addEvent.call(document, 'click', hide);
+        });
+    }
+    function hide() {
+        var o = document.getElementById('pop');
+        o.style.display = "none";
+        EX.removeEvent.call(document, 'click', hide);
+    }
+    function hide1() {
+        document.getElementById('errortext').style.display = "none";
+    }
+
+
+
+    </script>
+</body>
+</html>

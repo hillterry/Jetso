@@ -1,0 +1,119 @@
+html,body{font: 63% Helvetica,"Microsoft YaHei",SimSun;margin:0;padding:0;border:none;background-color:#ebeae7;background-image: url(../images/home-bg.gif);background-repeat:repeat-x;background-position:top;}
+body{font-size:1.2em;color:#464545;}
+table, td, tr
+{
+}
+.main-bg {background-image:url(../images/home-main-bg-main.gif);background-repeat:repeat-y;background-position:center;}
+.nei-main-bg {background-image:url(../images/home-main-bg-main-02.gif);background-repeat:repeat-y;background-position:center;}
+.button-text {color:#0f8fbc;font-size:14px;}
+.button-bg {background-image: url(../images/button-bg.gif);background-repeat: no-repeat;background-position: center center;}
+.button-link1 { color:#fff;text-decoration:none;font-size:14px;}
+.button-link1:hover { color:#ffe400;font-size:14px;}
+
+.lift-button-link1 { color:#464545;text-decoration:none;font-size:14px;}
+.lift-button-link1:hover { color:#2c91b4;font-size:14px;}
+.lift-button-link2 {color:#464545;text-decoration:none;line-height:25px;}
+.lift-button-link2:hover { color:#31a8dc;line-height:25px;}
+.lift-button-bg{
+	background-image: url(../images/ico-02.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left:16px;
+}
+.email-link1 { color:#31a8dc;text-decoration:none;}
+.email-link1:hover { color:#ff8400;}
+.main-im-bg {background-image:url(../images/main-im-bg.gif);background-repeat:repeat-y;background-position:center;}
+.main-im-bg2 {background-image:url(../images/main-im-bg2.gif);background-repeat:repeat-y;background-position:center;}
+.main-button-bg {background-image:url(../images/main-button-lift-bg.gif);background-repeat:no-repeat;background-position:left center;}
+.main-button-text {font-size:16px;color:#FFF;padding-left:20px;letter-spacing:0.2em;}
+.profile-title-bg {background-image:url(../images/profile-title-bg.gif);background-repeat:repeat-x;background-position:bottom;}
+.profile-im-bianju {margin-right:30px;margin-bottom:20px;}
+
+.text1 {color:#ACACAC;}
+.text2 {line-height:20px;text-indent:25px;font-size:14px;}
+.text3 {color:#31a8dc;font-size:14px;font-weight:bold;}
+.text4 {color:#464545;font-weight:bold; line-height:25px;}
+.text5 {color:#31a8dc;}
+.text6 {color:#464545;font-size:14px;font-weight:bold;}
+.text7 {line-height:25px;}
+.text8 {color:#fff;}
+.text9 {color:#f70022;line-height:25px;}
+
+.xian1 {border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#f0f0f0;}
+.biaodan1 {
+	color: #464545;
+	border: 1px solid #cfcfcf;
+}
+.member-bg {
+	background-image: url(../images/member-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.business-travel-jiange-bg {
+	background-image: url(../images/business-travel-jiange-bg.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+.head{
+	position: absolute;
+	left: 0px;
+	top: 123px;
+	z-index:999;
+}
+.errormessage
+{
+  color:red;
+}
+.Paging {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	display:block;
+ 	list-style-type:none;	
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+
+.Paging a{
+	color: #000;
+	padding-top: 2px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	border: 1px solid #999;
+	text-decoration:none;
+	display: inline;
+  margin-right: 2px;
+	margin-left: 2px;
+}
+.Paging a:hover{
+	color: #000;
+	padding-top: 2px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	border: 1px solid #F00;
+	text-decoration:none;
+    margin-right: 2px;
+	margin-left: 2px;
+}
+.Paging span{
+	color: #000;
+	display:inline;
+	padding-top: 2px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+    margin-right: 2px;
+	margin-left: 2px;
+}
+.Paging .current{
+		border: 1px solid #F00;
+		color:#FFF;
+		background-color:#F00;
+}
+.Paging .omit{
+		border: 1px solid #999;
+
+}

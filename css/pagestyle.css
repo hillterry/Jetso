@@ -1,0 +1,53 @@
+﻿.Paging {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	display:block;
+ 	list-style-type:none;	
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+
+.Paging a{
+	color: #000;
+	padding-top: 2px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	border: 1px solid #999;
+	text-decoration:none;
+	display: inline;
+  margin-right: 2px;
+	margin-left: 2px;
+}
+.Paging a:hover{
+	color: #000;
+	padding-top: 2px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	border: 1px solid #F00;
+	text-decoration:none;
+    margin-right: 2px;
+	margin-left: 2px;
+}
+.Paging span{
+	color: #000;
+	display:inline;
+	padding-top: 2px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+    margin-right: 2px;
+	margin-left: 2px;
+}
+.Paging .current{
+		border: 1px solid #F00;
+		color:#FFF;
+		background-color:#F00;
+}
+.Paging .omit{
+		border: 1px solid #999;
+
+}

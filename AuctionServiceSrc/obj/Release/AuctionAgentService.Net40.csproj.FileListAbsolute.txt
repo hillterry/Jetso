@@ -1,0 +1,4 @@
+F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.pdb
+F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionServiceSrc\obj\Release\AuctionAgentSvc.exe
+F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionServiceSrc\obj\Release\AuctionAgentSvc.pdb

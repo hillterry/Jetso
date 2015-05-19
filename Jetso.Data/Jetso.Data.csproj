@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2023E2C7-1143-42EE-92E7-FF0A56FE3E59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jetso.Data</RootNamespace>
+    <AssemblyName>Jetso.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DmFramework.Data.CommonEntity.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\DmFramework.Data.CommonEntity.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.Data.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\DmFramework.Data.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.Template.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\DmFramework.Template.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\DmFramework.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DmFramework.WebControls.v1.4, Version=1.4.1.168, Culture=neutral, PublicKeyToken=8df3f1eee85cc956, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\DmFramework.WebControls.v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.Biz.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="adview.Biz.cs" />
+    <Compile Include="adview.cs" />
+    <Compile Include="Auction.Biz.cs" />
+    <Compile Include="Auction.cs" />
+    <Compile Include="AuctionHistory.Biz.cs" />
+    <Compile Include="AuctionHistory.cs" />
+    <Compile Include="coupon.Biz.cs" />
+    <Compile Include="coupon.cs" />
+    <Compile Include="couponshare.Biz.cs" />
+    <Compile Include="couponshare.cs" />
+    <Compile Include="education.Biz.cs" />
+    <Compile Include="education.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="friend.Biz.cs" />
+    <Compile Include="friend.cs" />
+    <Compile Include="gender.Biz.cs" />
+    <Compile Include="gender.cs" />
+    <Compile Include="income.Biz.cs" />
+    <Compile Include="income.cs" />
+    <Compile Include="ip2location_db1.Biz.cs" />
+    <Compile Include="ip2location_db1.cs" />
+    <Compile Include="MailServer.Biz.cs" />
+    <Compile Include="MailServer.cs" />
+    <Compile Include="member.Biz.cs" />
+    <Compile Include="member.cs" />
+    <Compile Include="MobileRegIds.Biz.cs" />
+    <Compile Include="MobileRegIds.cs" />
+    <Compile Include="Order.Biz.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="PointHistory.Biz.cs" />
+    <Compile Include="PointHistory.cs" />
+    <Compile Include="pointrule.Biz.cs" />
+    <Compile Include="pointrule.cs" />
+    <Compile Include="PointType.Biz.cs" />
+    <Compile Include="PointType.cs" />
+    <Compile Include="producetype.Biz.cs" />
+    <Compile Include="producetype.cs" />
+    <Compile Include="product.Biz.cs" />
+    <Compile Include="product.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provide.Biz.cs" />
+    <Compile Include="provide.cs" />
+    <Compile Include="system.Biz.cs" />
+    <Compile Include="system.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

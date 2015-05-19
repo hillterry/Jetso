@@ -1,0 +1,105 @@
+﻿#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 9504
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#CurrentDirectory: C:\Windows\system32
+#CommandLine: -s
+#ApplicationType: WinForm
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, SYSTEM/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+14:44:28::241 10 N A0 请在使用数据库前设置[Common]连接字符串
+--- Excetption info: ---
+DmFramework.Data.Exceptions.HmCodeException: 请在使用数据库前设置[Common]连接字符串
+   在 DmFramework.Data.DataAccessLayer.DAL..ctor(String connName)
+   在 DmFramework.Data.DataAccessLayer.DAL.Create(String connName)
+   在 DmFramework.Data.Entity`1.Meta.get_DBO()
+   在 DmFramework.Data.Entity`1.Meta.FormatName(String name)
+   在 DmFramework.Data.Entity`1.EntityOperate.FormatName(String name)
+   在 DmFramework.Data.Configuration.FieldItem.CreateExpression(String action, Object value)
+   在 DmFramework.Data.Configuration.FieldItem.Equal(Object value)
+   在 Jetso.AuctionAgent.AuctionAgent.Work(Int32 index) 位置 f:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionServiceSrc\AuctionAgent.cs:行号 72
+   在 DmFramework.Utils.Service.HmTaskService`1.workWaper(Object data)
+
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 9020
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#CurrentDirectory: C:\Windows\system32
+#CommandLine: -s
+#ApplicationType: WinForm
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, SYSTEM/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:10:53::354 10 N A0 请在使用数据库前设置[Common]连接字符串
+--- Excetption info: ---
+DmFramework.Data.Exceptions.HmCodeException: 请在使用数据库前设置[Common]连接字符串
+   在 DmFramework.Data.DataAccessLayer.DAL..ctor(String connName)
+   在 DmFramework.Data.DataAccessLayer.DAL.Create(String connName)
+   在 DmFramework.Data.Entity`1.Meta.get_DBO()
+   在 DmFramework.Data.Entity`1.Meta.FormatName(String name)
+   在 DmFramework.Data.Entity`1.EntityOperate.FormatName(String name)
+   在 DmFramework.Data.Configuration.FieldItem.CreateExpression(String action, Object value)
+   在 DmFramework.Data.Configuration.FieldItem.Equal(Object value)
+   在 Jetso.AuctionAgent.AuctionAgent.Work(Int32 index) 位置 f:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionServiceSrc\AuctionAgent.cs:行号 72
+   在 DmFramework.Utils.Service.HmTaskService`1.workWaper(Object data)
+
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 1304
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#CurrentDirectory: C:\Windows\system32
+#CommandLine: -s
+#ApplicationType: WinForm
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, SYSTEM/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:31:02::796 11 N A1 索引超出了数组界限。
+--- Excetption info: ---
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 Jetso.AuctionAgent.AuctionAgent.Work(Int32 index) 位置 f:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionServiceSrc\AuctionAgent.cs:行号 122
+
+17:31:02::798 11 N A1 当前并未开始事务，请用BeginTransaction方法开始新事务！
+--- Excetption info: ---
+DmFramework.Data.Exceptions.HmDbSessionException: 当前并未开始事务，请用BeginTransaction方法开始新事务！
+   在 DmFramework.Data.DataAccessLayer.DbSession.Commit()
+   在 DmFramework.Data.Entity`1.Meta.Commit()
+   在 DmFramework.Data.Entity`1.EntityOperate.Commit()
+   在 Jetso.AuctionAgent.AuctionAgent.Work(Int32 index) 位置 f:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionServiceSrc\AuctionAgent.cs:行号 188
+   在 DmFramework.Utils.Service.HmTaskService`1.workWaper(Object data)
+
+
+#Software: Jetso.AuctionAgent for .NetFx4.0
+#ProcessID: 6268
+#AppDomain: AuctionAgentSvc.exe
+#FileName: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\AuctionAgentSvc.exe
+#BaseDirectory: F:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionService\
+#CurrentDirectory: C:\Windows\system32
+#CommandLine: -s
+#ApplicationType: WinForm
+#CLR: 4.0.30319.18408
+#OS: Windows 7 Service Pack 1 x64, SYSTEM/JOC-PC
+#Date: 2013-11-18
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+17:37:46::579 11 N A1 索引超出了数组界限。
+--- Excetption info: ---
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 Jetso.AuctionAgent.AuctionAgent.Work(Int32 index) 位置 f:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionServiceSrc\AuctionAgent.cs:行号 122
+
+17:37:46::581 11 N A1 当前并未开始事务，请用BeginTransaction方法开始新事务！
+--- Excetption info: ---
+DmFramework.Data.Exceptions.HmDbSessionException: 当前并未开始事务，请用BeginTransaction方法开始新事务！
+   在 DmFramework.Data.DataAccessLayer.DbSession.Commit()
+   在 DmFramework.Data.Entity`1.Meta.Commit()
+   在 DmFramework.Data.Entity`1.EntityOperate.Commit()
+   在 Jetso.AuctionAgent.AuctionAgent.Work(Int32 index) 位置 f:\WebSite_Asp_net\Jesto\Jestoversion2\AuctionServiceSrc\AuctionAgent.cs:行号 188
+   在 DmFramework.Utils.Service.HmTaskService`1.workWaper(Object data)
+

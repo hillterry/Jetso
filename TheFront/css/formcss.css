@@ -1,0 +1,70 @@
+﻿    .reveal-modal-bg
+        {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            z-index: 100;
+            display: none;
+            top: 0;
+            left: 0;
+        }
+
+        .reveal-modal
+        {
+            visibility: hidden;
+            top: 300px;
+            left: 55%;
+            margin-left: -300px;
+	        width:350px;
+            background: #eee;
+            position: absolute;
+            z-index: 101;
+            padding: 40px 40px 34px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+            -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+            -box-shadow: 0 0 10px rgba(0,0,0,.4);
+        }
+
+        .form0
+        {
+            margin-top: 15px;
+        }
+
+        .reveal-modal .close-reveal-modal
+        {
+            font-size: 22px;
+            line-height: .5;
+            position: absolute;
+            top: 8px;
+            right: 11px;
+            color: #aaa;
+            text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .reveal-modal p
+        {
+            padding: 0 0 15px 0;
+        }
+
+        .enter
+        {
+            width: 504px;
+            margin: 280px auto 0 auto;
+            background: #fff;
+        }
+
+        .name
+        {
+            width: 370px;
+            height: 40px;
+            border: solid #d6dade 1px;
+            font: 22px 微软雅黑;
+            padding: 0 9px;
+            margin-bottom: 20px;
+        }
