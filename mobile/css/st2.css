@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+#overview-contacts h2,
+#overview-cities h2 {
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 1em 0 .5em 1em;
+}
+#overview-account h2 {
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 1.5em 0 0 .6em;
+}
+#overview-account h2 span {
+    display: block;
+    clear: both;
+    font-size: 1.8em;
+    margin: .1em 0 0 0;
+}
+
+#overview-account .value {
+    float: right;
+    color: #ccc;
+}
+#settings-view {
+    margin: 1em auto .4em auto;
+}
+#overview-gallery .photo {
+    width: 277px;
+    margin: 20px 20px 7px;
+    height: 220px;
+    display: inline-block;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transform: translatez(0);
+}
+.km-wp #overview-gallery .photo {
+    width: 15em;
+    height: 15em;
+}
+    .photo1 {background-image: url("../images/IMG_0508_01.jpg");}
+    .photo2 {background-image: url("../images/IMG_0509_02.jpg");}
+    .photo3 {background-image: url("../images/IMG_0510_03.jpg");}
+    .photo4 {background-image: url("../images/IMG_0511_04.jpg");}
+    .photo5 {background-image: url("../images/IMG_0512_05.jpg");}
+    .photo6 {background-image: url("../images/IMG_0513_06.jpg");}
+
+#scrollview-container {
+    margin: 3px 0 0px 0;
+    padding-bottom: 10px;
+    background: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.3);
+    border-width: 1px 0;
+    box-shadow: 0 1px 1px rgba(255,255,255,.3);
+}
+.km-flat #scrollview-container {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+#overview-gallery .km-ios .km-content {
+    background: #bbb;
+}
+
+.imgclass{
+	width:13px; height:14px; margin:12px 0px 0px 5px; border-radius:0px;-moz-border-radius:0px; -webkit-border-radius:0px; -moz-box-shadow: 0px 0px 0px; box-shadow: 0px 0px 0px;
+	}
+	.imgclass2{
+		width:100px; height:100px; border-radius:0px;-moz-border-radius:0px; -webkit-border-radius:0px; -moz-box-shadow: 0px 0px 0px; box-shadow: 0px 0px 0px;}
+#scroller li
+{
+	padding:0px 0px ; background-color:#FFF;
+}
+/*--------------------------------------分界线--------------------------------------------*/
+
+
+    .km-ios #left-drawer .km-content, .km-android #left-drawer .km-content, .km-blackberry #left-drawer .km-content,
+    .km-ios #left-drawer .km-list > li, .km-android #left-drawer .km-list > li, .km-blackberry #left-drawer .km-list > li,
+    .km-ios #left-drawer .km-listview-link > .km-icon, .km-android #left-drawer .km-listview-link > .km-icon, .km-blackberry #left-drawer .km-listview-link > .km-icon,
+    .km-ios #left-drawer .km-list li > .km-icon, .km-android #left-drawer .km-list li > .km-icon, .km-blackberry #left-drawer .km-list li > .km-icon,
+    #right-drawer .km-content
+    {
+        background-color: #4e4e4e;
+        color: #fff;
+    }
+
+    .km-ios #left-drawer .km-group-title,
+    .km-blackberry #left-drawer .km-group-title
+    {
+        background-color: #6e6e6e;
+        color: #fff;
+    }
+
+    #left-drawer .km-navbar, #right-drawer .km-navbar,
+    .km-tablet .km-ios #left-drawer .km-view-title,
+    .km-tablet .km-ios #right-drawer .km-view-title
+    {
+	background-color: #2e2e2e;
+        color: #fff;
+        text-shadow: 0 -1px rgba(0,0,0,.5);
+    }
+
+    .km-drawer-button:before, .km-drawer-button:after { content: "\E077"; }
+    .km-contacts:before, .km-contacts:after { content: "\E0E4"; }
+    .km-camera:before, .km-camera:after { content: "\E0D0"; }
+    .km-printer:before, .km-printer:after { content: "\E07E"; }
+    .km-comments:before, .km-comments:after { content: "\E093"; }
+    .km-graph:before, .km-graph:after { content: "\E04B"; }
+
+
+    #two-drawer-home h2
+    {
+        display: inline-block;
+        font-size: 1em;
+        line-height: 3em;
+        margin: 0 0 0 1em;
+    }
+
+    #two-drawer-home img
+    {
+        float: left;
+        width: 3em;
+        height: 3em;
+        margin: 0;
+        border: 2px solid rgba(0,0,0,.1);
+    }
+
+    .km-ios #two-drawer-home .km-listview
+    {
+        background-color: #eaf1f5;
+    }
+	
+	
+
+
+/*首页banner*/
+   #scrollview-container .photo {
+        margin: 0;
+        height: 140px;
+        display: inline-block;	
+        -webkit-background-size:100%;/*-webkit-background-size: auto 100%;*/
+        background-size:100%;/* background-size:auto 100%;*/
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+    .km-flat #scrollview-container {
+        background: transparent;
+        border-width: 0;
+        box-shadow: none;
+    }
+
+    #scrollview-container .km-ios .km-content {
+        background: #bbb;
+    }
+    .km-android .km-list .album-set a {
+    	background-color: #277692;
+    }
+    .km-ios .km-list .album-set a {
+    	background-color: #bbb;
+    }
+    .km-ios #scrollview-container .km-navbar {
+        background: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(255,255,255,.5)), color-stop(.06, rgba(255,255,255,.45)), color-stop(.5, rgba(255,255,255,.2)), color-stop(.5, rgba(255,255,255,.15)), color-stop(1, rgba(100,100,100,0))), url(../../content/shared/images/patterns/pattern5.png);
+        background: -moz-linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,.45) 6%, rgba(255,255,255,.2) 50%, rgba(255,255,255,.15) 50%, rgba(100,100,100,0)), url(../../content/shared/images/patterns/pattern5.png);
+	}
+    .km-ios #scrollview-container .km-navbar .km-button
+    {
+        background-color: #000;
+    }
+	.km-ios #scrollview-container .km-content {
+        background: url(../../content/shared/images/patterns/pattern6.png);
+        box-shadow: inset 0 0 30px #000;
+	}
+
+	.km-ios #scrollview-container .km-pages .km-current-page {
+		background-color: #ff009c;
+	}
+	.km-ios #scrollview-container .km-pages {
+		padding-top: 18px;
+	}
+    .km-ios #scrollview-container .km-view-title
+    {
+        color: #fff;
+        text-shadow: 0 -1px rgba(0,0,0,.5);
+    }
+	
+	
+/*首页banner2*/
+
+#dark-theme .km-content, #dark-theme .km-navbar {
+	background-color: #111;
+}
+
+/* iOS pager */
+.km-ios #dark-theme .km-pages .km-current-page {
+	background: #ff009c;
+}
+
+#light-theme .km-content, #light-theme .km-navbar {
+	background-color: #ddd;
+}
+
+/* WP8 pager */
+.km-wp-dark #light-theme .km-content, .km-wp-dark  #light-theme .km-navbar {
+	background-color: #fff;
+}
+.km-wp-dark #light-theme .km-pages > li {
+	background-color: #000;
+}
+
+/* Flat pager */
+.km-flat #dark-theme .km-navbar {
+	color: #fff;
+}
+.km-flat #dark-theme .km-pages li {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.km-flat #dark-theme .km-pages .km-current-page {
+background: #10c4b2;
+}
+
+#light-theme .km-view-title {
+	color: #666;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.km-tablet .km-ios #dark-theme .km-view-title {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0,0,0,.5);
+}
+.km-android #light-theme .km-text {
+	color: #666;
+}
+
+#dark-theme .photo,
+#light-theme .photo {  /*宽高*/
+    border-radius:7px;-moz-border-radius:7px; -webkit-border-radius:7px;
+    width: 8em;
+    margin: 0px 5px;
+    height: 7em;
+    display: inline-block;
+    -webkit-background-size: auto 100%;
+    -webkit-transform: translatez(0);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+/*登入-----------------------------注册*/
+
+   #modalview-login-button,
+    #modalview-reg-button,
+    #modalview-open-button {
+        display: block;
+        text-align: center;
+        margin: .6em .8em 0;
+        font-size: 1.2em;
+    }
+
+    #modalview-open-button {
+        margin: 0 3em;
+        padding: .5em;
+    }
+    .km-flat #modalview-open-button {
+        color: #fff;
+    }
+
+    #modalview-camera {
+        text-align: center;
+    }
+
+    #modalview-camera img {
+        display: block;
+        margin: 30px auto;
+    }
+
+    #modalview-camera .km-content,
+    .km-ios #modalview-login .km-content {
+        background: url(../../content/shared/images/patterns/pattern1.png) repeat 0 0;
+    }
+
+    .km-ios #modalview-camera .km-button,
+    .km-ios #modalview-login .km-button,
+    .km-ios #modalview-camera .km-navbar,
+    .km-ios #modalview-login .km-header,
+    .km-blackberry #modalview-camera .km-navbar,
+    .km-blackberry #modalview-login .km-navbar
+    {
+        background-color: #000;
+    }
+
+    .km-blackberry #modalview-camera .km-button
+    {
+        color: #fff;
+    }
+
+    .km-ios #modalview-camera .km-button:active,
+    .km-ios #modalview-camera .km-state-active,
+    .km-ios #modalview-login .km-button:active,
+    .km-ios #modalview-login .km-state-active {
+        background-color: #2e2e2e;
+    }
+
+    .km-ios #modalview-login #modalview-login-button,
+    .km-flat #modalview-login #modalview-login-button {
+        background-color: Green;
+        color: #fff;
+    }
+
+    .km-tablet .km-ios #modalview-camera .km-view-title,
+    .km-tablet .km-ios #modalview-login .km-view-title {
+        color: #fff;
+        text-shadow: 0 -1px rgba(0,0,0,.5);
+    }
+
+
+
+/*商品页面*/
+    .photo11 {background-image: url("../images/b2_1.jpg");}
+    .photo22 {background-image: url("../images/b2_2.jpg");}
+    .photo33 {background-image: url("../images/b2_3.jpg");}
+    .photo44 {background-image: url("../images/b2_4.jpg");}
+
+	
+
+    #scrollview-container .photooo {
+        margin: 0;
+        height: 220px;
+        display: inline-block;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+.offer{ background-color:#e6e6e6;
+        margin:0px 5px; 
+		padding:10px 10px;
+		border-radius:7px;
+		-moz-border-radius:7px; 
+		-webkit-border-radius:7px;
+}
+.offer p{ padding:0px; margin:8px 0px;}
+.off_ys{ color:#f7843b; font-size:15px; font-weight:600;}
+.ffwe{
+	margin:0px 5px;
+	padding:0px 0px;
+	  }
+.ffwe11{
+	margin:0px 8px;
+	padding:0px 0px;
+	  }	  
+.border_x{
+	margin:0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #f0f0f0;
+	border-bottom-color: #f0f0f0;
+	border-left-color: #f0f0f0;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #f0f0f0;
+}	  
+
+
+
+
+
+

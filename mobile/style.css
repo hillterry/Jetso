@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+.ddd{ background-color:#FFF;}
+
+.ffa40a{color:#ffa40a;}
+.eee6e6{ color:#d7d7d7;}
+li,ul{
+	list-style-type: none;
+	padding:0px; margin:0px;
+}
+.font15{ font-size:15px;}
+a,img{border:0; text-decoration:none;}
+.abc{ position:relative;}
+.abc1{
+	position:absolute;
+	height:10px;
+	background-color:#f4f4f4;
+	top: -10px;
+	z-index: 9999;
+	width:100%;
+	left: 0px;
+}
+.left_righ10{ margin-left:10px; margin-right:17px;}
+.top8{ margin-top:8px;}
+.auction{
+	font-size:16px;
+	background-color: #f0f0f0;
+	padding:10px 6px;
+	border-left-width: 7px;
+	border-left-style: solid;
+	border-left-color: #ffa40a;
+}
+
+
+.auction .more{
+	padding:10px 10px;
+	background-color:#ffa40a;
+	position:absolute;
+	top: 0px;
+	right: 0px;
+}
+.auction .more:hover{ background-color:#f9af33; color:#404040;}
+.content ul li{ margin-top:10px;}
+
+/* swipe */
+/*首页的-----------------現場拍賣更多*/
+.we-he{ width:100px; height:100px;}
+.swipe{width:326px;height:235px;overflow:hidden;position:relative; margin:0 auto;}
+.swipe ul{
+	-webkit-transition:left 800ms ease-in 0;
+	-moz-transition:left 800ms ease-in 0;
+	-o-transition:left 800ms ease-in 0;
+	-ms-transition:left 800ms ease-in 0;
+	transition:left 800ms ease-in 0;
+}
+.swipe #pagenavi{position:absolute;left:0;bottom:10px;text-align:center;width:100%;}
+.swipe #pagenavi a{width:14px;height:14px;line-height:99em;background:#b5b5b5;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;margin:0 4px;overflow:hidden;cursor:pointer;display:inline-block;*display:inline;*zoom:1;}
+.swipe #pagenavi a.active{background:#C80002;}
+
+
+
+.content div.deal_list{
+	position:relative;
+	padding:.25em;
+	min-height:115px;
+	border-left-width: 7px;
+	border-left-style: solid;
+	border-left-color: #ffa40a;
+}
+.content div.deal_list:hover{background:#f0f0f0;}
+.cont_w div.deal_list:hover{ background-color:inherit;}
+.content div.deal_list > div.img_container{
+	overflow:hidden;
+	position:absolute;
+	width:108px;
+	height:103px;
+	padding:0;
+	text-align:center;
+	line-height:100px;
+	top: 6px;
+	left: 16px;
+}
+.content div.deal_list label.cart_icon{
+	background-color:#FFF;
+	position:absolute;
+	right:1px;
+	bottom:40px;
+	width:30px;
+	height:40px;
+	background-size:150px;
+	z-index: 999;
+	background-image: url(images/b2_3.jpg);
+	background-repeat: repeat;
+}
+.cont_w div.deal_list label.cart_icon2{
+	position:absolute;
+	right:9px;
+	bottom:2px;
+	background:url('./i/TabIcon.png') no-repeat -90px 0px;
+	background-size:150px;
+}
+
+.content ul li p{font-size:.75em; padding-left:7em; display:block;}
+.content .productTitle{font-size:15px;line-height:1.5em;color:#333;}
+
+
+
+
+
+
+
+.come { 
+		width:275px;
+		margin:0px auto 20px auto;
+		background-color:#FFF;
+		-moz-box-shadow: 0px 0px 1px 0px #888888; /* 老的 Firefox */
+        box-shadow: 0px 0px 1px 0px #888888;
+       }
+/*尚未登入*/
+.fla-lfet{ float:left;}
+.fla-right{ float:right;}
+.clar{ clear:both;}
+.sang{
+	border: 1px solid #CCC;
+	margin:0px 7px;
+
+	
+}
+.sang ul li a{ 
+    display:block; padding:13px 20px;	
+	position:relative;
+	}
+.sang ul li a span{
+	position:absolute;
+	right: 11px;
+	top: 16px;
+}
+.sang12 .sang122{
+	position:absolute;
+	right: 10px;
+	top: 16px;
+}
+.sang ul li a:hover{
+	 background-color:#f0f0f0;
+	} 
+.font18{ font-size:25px; color:#f7843b;}
+.sang .aang1{
+	position:absolute;
+	right: 13px;
+	top: 33px;
+}
+.sang .aang13{
+	position:absolute;
+	right: 10px;
+	top: 28px;
+}
+.service{ margin-top:30px;}
+.top15{ margin-top:15px;}
+
+/*您还没有拍卖~*/
+.text-top{text-align:center; margin-top:50px;}
+/*帐户积分*/
+.account_bid{ margin:10px 7px;}
+
+
+.pers li{ display:block; float:left;}
+.wight30{ width:70px; display:block; text-align:left;}
+.yuj{
+	border:1px solid #cacaca;
+	border-radius:5px;
+	padding:5px 3px;
+	-moz-border-radius:5px; }
+.yuj2{
+	border:1px solid #cacaca;
+	border-radius:5px;
+	padding:0px 0px;
+	-moz-border-radius:5px; }
